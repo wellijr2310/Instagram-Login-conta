@@ -51,16 +51,11 @@ body {
 }
 .login-button:hover {
   background-color: #007ace;
-}
-.error-message {
-  color: red;
-  margin-top: 10px;
-  display: none;
-}
+
 .forgot-password {
   margin-top: 20px; /* Aumenta a distância entre o botão e o link */
   color: white; /* Garante que o link seja branco */
-  background-color: transparent; /* Remove o fundo do link */
+  background-color: white;/* Remove o fundo do link */
   border: none; /* Remove a borda */
   font-weight: bold; /* Deixa o texto em negrito */
   text-decoration: none; /* Remove o sublinhado */
