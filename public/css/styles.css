@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.language-selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+.login-container img {
+  width: 105px;
+  margin-bottom: 20px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.login-button:hover {
+  background-color: #007ace;
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+.forgot-password {
+  margin-top: 20px; /* Aumenta a distância entre o botão e o link */
+  color: white; /* Garante que o link seja branco */
+  background-color: transparent; /* Remove o fundo do link */
+  border: none; /* Remove a borda */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 14px;
+}
+.forgot-password:hover {
+  background-color: transparent; /* Sem fundo ao passar o mouse */
+  color: #0095f6; /* Cor azul do Instagram no hover */
+}
+.create-account {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #0095f6;
+  border-radius: 25px;
+  color: #0095f6;
+  background-color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.create-account:hover {
+  background-color: #f0f8ff;
+}
+@media screen and (max-width: 370px) {
+  .login-container img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram - Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="imagens/image.png" />
+  </head>
+  <body>
+    <div class="language-selector">
+      <select>
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+
+    <!-- Login Section -->
+    <div class="login-container" id="loginContainer">
+      <!-- Logo do Instagram -->
+      <img src="imagens/image.png" alt="Instagram Logo" />
+      <!-- Caminho correto da imagem -->
+
+      <!-- Campos de entrada para nome de usuário e senha -->
+      <form action="/login" method="post">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Nome de usuário"
+          id="usernameInput"
+          name="username"
+        />
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Senha"
+          id="passwordInput"
+          name="password"
+        />
+
+        <!-- Botão de login -->
+        <input type="submit" class="login-button" value="Entrar" />
+
+        <div>
+          <!-- Link para recuperação de senha -->
+          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <!-- Link para criar uma nova conta -->
+        <a href="#" class="create-account">Criar nova conta</a>
+      </form>
+    </div>
+  </body>
+</html>
